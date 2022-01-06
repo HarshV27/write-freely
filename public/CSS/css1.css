@@ -1,0 +1,201 @@
+*{
+    margin:0px;
+    padding:0px;/*universal selector..applies to all elements*/
+    box-sizing: border-box;/*keeps the padding and the border out of the box size*/
+}
+
+.head {
+  height: 100vh;
+  background-image: url(BACKGROUND.jpg);
+  background-size: cover;
+  color: red;
+  background-position: top; /*no matter what the top wont be cut even if the size of screen changes*/
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 85%,
+    0 100%
+  ); /* use clipy ..(on google) and just copy this thing */
+  position: relative;
+  display: block;
+}
+.heading-primary {
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.text-box{
+    position:absolute;
+    top: 20%;
+    left: 27%;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+ 
+ .heading1{
+     display: block;
+     font-size: 4rem;
+     font-weight: 700;
+     letter-spacing: 1rem;
+     padding-bottom: 1rem;
+     text-shadow: 0 0 0.2rem #999, 0 0 0.3rem #999;
+ 
+ }
+ 
+ .heading2{
+   font-size: 1rem;
+   display: block;
+   font-weight: 700;
+   letter-spacing: 0.5rem;
+   text-align: left;
+   padding-left: 12%;
+   text-shadow: 0 0 0.2rem #999, 0 0 0.3rem #999;
+ 
+ }
+
+ .btn:link,
+ .btn:visited{
+  position: absolute;
+  left: 16%;
+  top: 65%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s;
+  padding: 10px 30px;
+    display: inline-block;
+    border-radius: 150px;
+    font-size: 1.3rem;
+}
+.btn-white{
+    background-color: white;
+    color: gray;
+    
+}
+.btn:active{
+    transform: translateY(-10px);
+   }
+ .btn:hover{
+       transform: translateY(-3px);
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+   }
+ .btn::after{/*after psuedo element  makes this is basically treated like a child of normal button element*/
+     content: "";/*we have to specify it otherwise it will not appear*/
+     border-radius: 150px;
+     position:absolute;
+     height: 100%;
+     width: 100%;
+     top: 0%;/*here u needed to specify it to 0 as for original its 16% and 65% bu its a pseudo class of btn so deviate 0% from origioal size*/
+     left: 0%;
+     z-index: -1;/*this defines the position of element if they are one on ntop of another*/
+     transition: all 0.4s;
+ }
+ .btn-white::after{
+     background-color: white;
+     color: gray;
+ }
+ .btn:hover::after{
+     transform: scaleX(1.4) scaleY(1.6);/*scale is if we put 2 in it will basically double the size of the element*/
+     opacity: 0;
+ }
+
+ @keyframes moveinBottom {
+    0%{
+opacity:0;/*specifies the opacity/transparency of an element*/
+        transform:translateY(100px);
+    }
+    80%{
+        transform:translateY(-10px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.btn-animated{
+    animation: moveinBottom 0.5s ease-out 0.75s;
+   animation-fill-mode: backwards;/*it automatically applies the condition of 0% to initial state*/
+}
+
+
+.btn1:link,
+ .btn1:visited{
+  position: absolute;
+  left: 76%;
+  top: 65%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s;
+  padding: 10px 30px;
+    display: inline-block;
+    border-radius: 150px;
+    font-size: 1.3rem;
+}
+.btn1-white{
+    background-color: white;
+    color: gray;
+    
+}
+.btn1:active{
+    transform: translateY(-10px);
+   }
+ .btn1:hover{
+       transform: translateY(-3px);
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+   }
+ .btn1::after{/*after psuedo element  makes this is basically treated like a child of normal button element*/
+     content: "";/*we have to specify it otherwise it will not appear*/
+     border-radius: 150px;
+     position:absolute;
+     height: 100%;
+     width: 100%;
+     top: 0%;/*here u needed to specify it to 0 as for original its 16% and 65% bu its a pseudo class of btn so deviate 0% from origioal size*/
+     left: 0%;
+     z-index: -1;/*this defines the position of element if they are one on ntop of another*/
+     transition: all 0.4s;
+ }
+ .btn1-white::after{
+     background-color: white;
+     color: gray;
+ }
+ .btn1:hover::after{
+     transform: scaleX(1.4) scaleY(1.6);/*scale is if we put 2 in it will basically double the size of the element*/
+     opacity: 0;
+ }
+
+ .btn1-animated{
+    animation: moveinBottom 0.5s ease-out 0.75s;
+   animation-fill-mode: backwards;/*it automatically applies the condition of 0% to initial state*/
+}
+.about{
+ position:absolute;
+ display: inline-block;
+ top: 85%;
+ left: 2%;
+ font-size: 0.7rem;
+ font-family: sans-serif;
+ color: #bbb;
+}
+.about1{
+ padding-bottom: 5px;
+ font-family: sans-serif;
+}
+.Github{
+ font-size: 1.1rem;
+ padding:2px 10px;
+ background-color: aliceblue;
+ border-radius: 150px;
+ font-family: sans-serif;
+}
+.logo-box{
+    position: fixed;
+    text-align: left;
+    top: 2rem;
+    left: 3rem;
+    }
+    
+    .logo{
+        height: 4rem;
+        width: auto;
+        /*border:0.1rem outset #999;*/
+       
+    }
+  

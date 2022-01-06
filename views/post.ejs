@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/csspost.css">
+    <title>Document</title>
+</head>
+<body >
+  <div class="logo-box">
+    <img src="assets/CSS/logo-white.png" alt="logo not found" class="logo ">
+  </div >
+
+    <div>
+      <h1>
+        <span class="heading1"> write-freely] </span>
+        <span class="heading2"> Express Your Thoughts, Your Way</span></h1>
+    </div>
+    <form action="/save" class="form" method="post" enctype="multipart/form-data">
+     <label for="fname" class="lab">Name:</label>
+     <input type="text" name="name" style="height:50px; width: 400px;" class="name"required>
+    
+     <br>
+     <p class="message lab">
+      Post: 
+    </p>
+     <!--<input type="text"  style="height:300px; width: 400px;" required>-->
+     <textarea name="post" id="address" cols="50" rows="13" class="name"></textarea>
+     <br>
+     <div class="image">
+     <label for="image" class="lab">Image:  </label>
+     <input type="file" accept="image/*" name="img" id="img">
+    </div>
+     <br>
+     <button type="submit" class="submit"><b>POST</b></button>
+    </form>
+</body>
+</html>

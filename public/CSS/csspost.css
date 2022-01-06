@@ -1,0 +1,80 @@
+.form{
+ position:absolute;
+ top: 23%;
+ left: 33%;
+}
+.message{
+ padding-left: 0.55rem;
+}
+.submit{
+    margin-left: 15rem;
+    padding: 0.4rem 1rem;
+    border-width: 0.5px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #cf390c;
+}
+.image{
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 0rem;
+}
+#address{
+padding-left: 1.2rem;
+margin-left: 4rem;
+}
+
+.heading1{
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding-bottom: 1rem;
+    left:30%;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 0 0 0.3rem #999, 0 0 0.4rem #999;
+}
+
+.heading2{
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-align: left;
+  padding-left: 12%;
+  position: absolute;
+  left: 23%;
+  top: 5rem;
+  color: whitesmoke;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 0 0 0.3rem #999, 0 0 0.4rem #999;
+}
+body{
+ background-image: url(b5.jpg);
+}
+.lab{
+ padding-right: 1rem;
+ font-weight: 550;
+ font-family: sans-serif;
+}
+
+.logo-box{
+  position: fixed;
+  text-align: left;
+  top: 2rem;
+  left: 3rem;
+  }
+  
+  .logo{
+      height: 4rem;
+      width: auto;
+      /*border:0.1rem outset #999;*/
+     
+  }
+.name{
+  border-radius: 1rem;
+}

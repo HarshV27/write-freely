@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/CSS/cssbrowse.css" />
+    <title>Data</title>
+  </head>
+  <body class="b0">
+    <div class="logo-box">
+        <img src="assets/CSS/logo-white.png" alt="logo not found" class="logo ">
+      </div >
+
+    <span class="heading1"> write-freely] </span>
+    <span class="heading2"> Express Your Thoughts, Your Way</span></h1>
+    
+    <% for(let i = parr.length-1; 0 < i; i--) { %>
+        <div class="post_b">
+        <div class="post_b2">
+     <div class="post_b3">
+    <h2 class="w1"><%= parr[i].name %></h2>
+    <h2 class="w2"><%= parr[i].date %></h2>
+   </div>
+    <h2 class="w3"><%= parr[i].post %></h2>
+    <!-- Base64 is truncated for the example -->
+    <img src="data:image/png;base64,<%= parr[i].img %>" class="img" />
+</div>
+</div> <% }
+    %>
+  </body>
+</html>
