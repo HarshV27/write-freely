@@ -71,7 +71,7 @@ app.post("/save", (req, res) => {
 });
 
 mongoose
-  .connect("mongodb+srv://hv:qwertyuiop123456789@cluster0.czqoh.mongodb.net/first?retryWrites=true&w=majority")
+  .connect("mongodb+srv://hv:qwertyuiop123456789@cluster0.czqoh.mongodb.net/first?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.log("connectedd to db");
     app.listen(process.env.PORT||3000, () => {
