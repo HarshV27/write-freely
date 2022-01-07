@@ -74,7 +74,7 @@ mongoose
   .connect("mongodb+srv://hv:qwertyuiop123456789@cluster0.czqoh.mongodb.net/first?retryWrites=true&w=majority")
   .then(() => {
     console.log("connectedd to db");
-    app.listen(3000, () => {
+    app.listen(process.env.PORT||3000, () => {
       console.log("exppress server staresdrfs");
     });
   })
